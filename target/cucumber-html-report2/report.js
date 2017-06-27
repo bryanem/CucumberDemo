@@ -1,4 +1,136 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("ContactConfirm.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Adoption.feature");
+formatter.feature({
+  "line": 2,
+  "name": "Adopt an animal",
+  "description": "",
+  "id": "adopt-an-animal",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@prueba"
+    }
+  ]
+});
+formatter.scenario({
+  "line": 4,
+  "name": "Adopt an available animal",
+  "description": "",
+  "id": "adopt-an-animal;adopt-an-available-animal",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 5,
+  "name": "I am on my zoo website",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "I navigate to \"adoption\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "I check for an available animal",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "I submit the form with valid data",
+  "rows": [
+    {
+      "cells": [
+        "Fields",
+        "Value"
+      ],
+      "line": 9
+    },
+    {
+      "cells": [
+        "Name",
+        "Jack Joe"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
+        "Address",
+        "Happy Land"
+      ],
+      "line": 11
+    },
+    {
+      "cells": [
+        "Postcode",
+        "A1 S22"
+      ],
+      "line": 12
+    },
+    {
+      "cells": [
+        "Email",
+        "bryan@breit.com"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "Submit",
+        "adoption"
+      ],
+      "line": 14
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "There should be a confirmation message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonPageStepDefinitions.shouldNavigateToZooSite()"
+});
+formatter.result({
+  "duration": 5794651789,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "adoption",
+      "offset": 15
+    }
+  ],
+  "location": "CommonPageStepDefinitions.shouldClickOnLink(String)"
+});
+formatter.result({
+  "duration": 1638670296,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AdoptionPageStepDefinitions.checkForAnimal()"
+});
+formatter.result({
+  "duration": 2107319657,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CommonPageStepDefinitions.submitContactForm(DataTable)"
+});
+formatter.result({
+  "duration": 6301412689,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AdoptionConfirmationPageStepDefinitions.checkConfirmationMessage()"
+});
+formatter.result({
+  "duration": 43872594,
+  "status": "passed"
+});
+formatter.uri("ContactConfirm.feature");
 formatter.feature({
   "line": 1,
   "name": "Submit a valid contact form",
@@ -93,7 +225,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldNavigateToZooSite()"
 });
 formatter.result({
-  "duration": 3891075231,
+  "duration": 1954852343,
   "status": "passed"
 });
 formatter.match({
@@ -106,9 +238,8 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldClickOnLink(String)"
 });
 formatter.result({
-  "duration": 20052265,
-  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d58.0.3029.110)\n  (Driver info: chromedriver\u003d2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform\u003dWindows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 6 milliseconds\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027DESKTOP-B3GCSPM\u0027, ip: \u0027192.168.0.186\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir\u003dC:\\Users\\Usuario\\AppData\\Local\\Temp\\scoped_dir2648_18007}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d58.0.3029.110, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 6de76c95acde5fd368bd70c55efb8600\n*** Element info: {Using\u003did, value\u003dcontact_link}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:218)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)\r\n\tat pageStepDefinitions.CommonPageStepDefinitions.shouldClickOnLink(CommonPageStepDefinitions.java:32)\r\n\tat ✽.When I navigate to \"contact\"(ContactConfirm.feature:5)\r\n",
-  "status": "failed"
+  "duration": 2105092881,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -120,13 +251,15 @@ formatter.match({
   "location": "AdoptionFormPageStepDefinitions.moveSlider(int)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 95017205,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonPageStepDefinitions.submitContactForm(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4272474479,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -138,6 +271,84 @@ formatter.match({
   "location": "CommonPageStepDefinitions.checkPageTitle(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 137861569,
+  "status": "passed"
+});
+formatter.uri("ZooTest.feature");
+formatter.feature({
+  "line": 2,
+  "name": "To test the high level funcionality of the Zoo test site",
+  "description": "",
+  "id": "to-test-the-high-level-funcionality-of-the-zoo-test-site",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@prueba"
+    }
+  ]
+});
+formatter.background({
+  "line": 4,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 5,
+  "name": "I am on my zoo website",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CommonPageStepDefinitions.shouldNavigateToZooSite()"
+});
+formatter.result({
+  "duration": 3684517897,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 7,
+  "name": "To set the start date",
+  "description": "",
+  "id": "to-test-the-high-level-funcionality-of-the-zoo-test-site;to-set-the-start-date",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 8,
+  "name": "I navigate to \"adoption\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 9,
+  "name": "I set the start date to \"Today\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "adoption",
+      "offset": 15
+    }
+  ],
+  "location": "CommonPageStepDefinitions.shouldClickOnLink(String)"
+});
+formatter.result({
+  "duration": 1595538197,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Today",
+      "offset": 25
+    }
+  ],
+  "location": "AdoptionPageStepDefinitions.setStartDate(String)"
+});
+formatter.result({
+  "duration": 160983364,
+  "status": "passed"
 });
 });
