@@ -1,6 +1,7 @@
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.*;
+
 import org.junit.AfterClass;
 
 @RunWith(Cucumber.class)
@@ -14,6 +15,6 @@ import org.junit.AfterClass;
 public class Run2Test {
 	@AfterClass
     public static void teardown() {
-		pageStepDefinitions.AbstractPageStepDefinitions.driver.quit();
+		pageStepDefinitions.AbstractPageStepDefinitions.drivers.close();
     }
 }

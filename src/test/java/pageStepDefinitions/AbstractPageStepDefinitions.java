@@ -1,30 +1,19 @@
 package pageStepDefinitions;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import util.PropertyManager;
+import util.SingleDriver;
 
 public abstract class AbstractPageStepDefinitions {
-	protected PropertyManager property;
+	public static PropertyManager property;
 	public static WebDriver driver;
+	public static SingleDriver drivers;
 	
 	protected WebDriver getDriver() {
 		property=new PropertyManager();
 		property.generateProperties();
-		if(driver==null||driver.toString().contains("(null)")) {
-			if("firefox".equals(property.browser)) {
-				System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
-				driver=new FirefoxDriver();
-			} else if("edge".equals(property.browser)) {
-				System.setProperty("webdriver.edge.driver","MicrosoftWebDriver.exe");
-				driver = new EdgeDriver();
-			} else {
-				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-				driver=new ChromeDriver();
-			}
-		}
-		return driver;
+		drivers=SingleDriver.getInstance(property);
+		drivers.renew(property);
+		return drivers.getDriver();
 	}
 	
 	protected void wait(int seconds) {

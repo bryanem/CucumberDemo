@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="16" failures="0" name="RunTest" time="0.002" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RunTest" time="25.561" tests="16" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jre1.8.0_131\bin"/>
     <property name="java.vm.version" value="25.131-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Usuario\workspace\junit-demo"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Usuario\workspace\CucumberDemo"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,20 +16,19 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Usuario\workspace\junit-demo"/>
+    <property name="user.dir" value="C:\Users\Usuario\workspace\CucumberDemo"/>
     <property name="java.runtime.version" value="1.8.0_131-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jre1.8.0_131\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
     <property name="java.io.tmpdir" value="C:\Users\Usuario\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Usuario\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1430904385484831521.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Usuario\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6481879536431441860.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files (x86)\Java\jre1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre1.8.0_131/bin/client;C:/Program Files (x86)/Java/jre1.8.0_131/bin;C:/Program Files (x86)/Java/jre1.8.0_131/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Mozilla Firefox;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\maven\bin;C:\maven\bin;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps;;C:\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jre1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre1.8.0_131/bin/client;C:/Program Files (x86)/Java/jre1.8.0_131/bin;C:/Program Files (x86)/Java/jre1.8.0_131/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Mozilla Firefox;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\maven\bin;C:\maven\bin;C:\Program Files\Git\cmd;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps;;C:\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
@@ -48,12 +47,12 @@
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="es"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_131"/>
     <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jre1.8.0_131\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jre1.8.0_131\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_131\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_131\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_131\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_131\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_131\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_131\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_131\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\Usuario\workspace\junit-demo\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\Usuario\workspace\CucumberDemo\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -61,20 +60,20 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="| &quot;adoption&quot; | &quot;adoption&quot; |" name="Given I am on my zoo website" time="0"/>
-  <testcase classname="| &quot;adoption&quot; | &quot;adoption&quot; |" name="When I navigate to &quot;adoption&quot;" time="0"/>
-  <testcase classname="| &quot;adoption&quot; | &quot;adoption&quot; |" name="Then I check the title is &quot;adoption&quot;" time="0"/>
-  <testcase classname="| &quot;adoption&quot; | &quot;adoption&quot; |" name="| &quot;adoption&quot; | &quot;adoption&quot; |" time="0.001"/>
-  <testcase classname="| &quot;about&quot; | &quot;about&quot; |" name="Given I am on my zoo website" time="0"/>
-  <testcase classname="| &quot;about&quot; | &quot;about&quot; |" name="When I navigate to &quot;about&quot;" time="0"/>
-  <testcase classname="| &quot;about&quot; | &quot;about&quot; |" name="Then I check the title is &quot;about&quot;" time="0"/>
-  <testcase classname="| &quot;about&quot; | &quot;about&quot; |" name="| &quot;about&quot; | &quot;about&quot; |" time="0"/>
-  <testcase classname="| &quot;contact&quot; | &quot;contact&quot; |" name="Given I am on my zoo website" time="0"/>
-  <testcase classname="| &quot;contact&quot; | &quot;contact&quot; |" name="When I navigate to &quot;contact&quot;" time="0"/>
-  <testcase classname="| &quot;contact&quot; | &quot;contact&quot; |" name="Then I check the title is &quot;contact&quot;" time="0"/>
-  <testcase classname="| &quot;contact&quot; | &quot;contact&quot; |" name="| &quot;contact&quot; | &quot;contact&quot; |" time="0.001"/>
-  <testcase classname="| &quot;home&quot; | &quot;home&quot; |" name="Given I am on my zoo website" time="0"/>
-  <testcase classname="| &quot;home&quot; | &quot;home&quot; |" name="When I navigate to &quot;home&quot;" time="0"/>
-  <testcase classname="| &quot;home&quot; | &quot;home&quot; |" name="Then I check the title is &quot;home&quot;" time="0"/>
-  <testcase classname="| &quot;home&quot; | &quot;home&quot; |" name="| &quot;home&quot; | &quot;home&quot; |" time="0"/>
+  <testcase name="Given I am on my zoo website" classname="| &quot;adoption&quot; | &quot;adoption&quot; |" time="0"/>
+  <testcase name="When I navigate to &quot;adoption&quot;" classname="| &quot;adoption&quot; | &quot;adoption&quot; |" time="0"/>
+  <testcase name="Then I check the title is &quot;adoption&quot;" classname="| &quot;adoption&quot; | &quot;adoption&quot; |" time="0"/>
+  <testcase name="| &quot;adoption&quot; | &quot;adoption&quot; |" classname="| &quot;adoption&quot; | &quot;adoption&quot; |" time="0.001"/>
+  <testcase name="Given I am on my zoo website" classname="| &quot;about&quot; | &quot;about&quot; |" time="0"/>
+  <testcase name="When I navigate to &quot;about&quot;" classname="| &quot;about&quot; | &quot;about&quot; |" time="0"/>
+  <testcase name="Then I check the title is &quot;about&quot;" classname="| &quot;about&quot; | &quot;about&quot; |" time="0"/>
+  <testcase name="| &quot;about&quot; | &quot;about&quot; |" classname="| &quot;about&quot; | &quot;about&quot; |" time="0.001"/>
+  <testcase name="Given I am on my zoo website" classname="| &quot;contact&quot; | &quot;contact&quot; |" time="0"/>
+  <testcase name="When I navigate to &quot;contact&quot;" classname="| &quot;contact&quot; | &quot;contact&quot; |" time="0"/>
+  <testcase name="Then I check the title is &quot;contact&quot;" classname="| &quot;contact&quot; | &quot;contact&quot; |" time="0"/>
+  <testcase name="| &quot;contact&quot; | &quot;contact&quot; |" classname="| &quot;contact&quot; | &quot;contact&quot; |" time="0.001"/>
+  <testcase name="Given I am on my zoo website" classname="| &quot;home&quot; | &quot;home&quot; |" time="0"/>
+  <testcase name="When I navigate to &quot;home&quot;" classname="| &quot;home&quot; | &quot;home&quot; |" time="0"/>
+  <testcase name="Then I check the title is &quot;home&quot;" classname="| &quot;home&quot; | &quot;home&quot; |" time="0"/>
+  <testcase name="| &quot;home&quot; | &quot;home&quot; |" classname="| &quot;home&quot; | &quot;home&quot; |" time="0"/>
 </testsuite>

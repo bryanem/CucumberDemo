@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("PageHeading.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/PageHeading.feature");
 formatter.feature({
   "line": 2,
   "name": "Test Page Headings",
@@ -123,7 +123,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldNavigateToZooSite()"
 });
 formatter.result({
-  "duration": 4952993347,
+  "duration": 6202868608,
   "status": "passed"
 });
 formatter.match({
@@ -136,7 +136,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldClickOnLink(String)"
 });
 formatter.result({
-  "duration": 3865747112,
+  "duration": 6270460683,
   "status": "passed"
 });
 formatter.match({
@@ -149,7 +149,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.checkTitle(String)"
 });
 formatter.result({
-  "duration": 18239461,
+  "duration": 7796712,
   "status": "passed"
 });
 formatter.scenario({
@@ -191,7 +191,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldNavigateToZooSite()"
 });
 formatter.result({
-  "duration": 1652674828,
+  "duration": 1865561988,
   "status": "passed"
 });
 formatter.match({
@@ -204,7 +204,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldClickOnLink(String)"
 });
 formatter.result({
-  "duration": 3351606293,
+  "duration": 635331014,
   "status": "passed"
 });
 formatter.match({
@@ -217,7 +217,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.checkTitle(String)"
 });
 formatter.result({
-  "duration": 13262979,
+  "duration": 7387677,
   "status": "passed"
 });
 formatter.scenario({
@@ -259,7 +259,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldNavigateToZooSite()"
 });
 formatter.result({
-  "duration": 2744126373,
+  "duration": 2842249075,
   "status": "passed"
 });
 formatter.match({
@@ -272,7 +272,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldClickOnLink(String)"
 });
 formatter.result({
-  "duration": 2575683751,
+  "duration": 3593479973,
   "status": "passed"
 });
 formatter.match({
@@ -285,7 +285,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.checkTitle(String)"
 });
 formatter.result({
-  "duration": 11574650,
+  "duration": 4805815,
   "status": "passed"
 });
 formatter.scenario({
@@ -327,7 +327,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldNavigateToZooSite()"
 });
 formatter.result({
-  "duration": 2607081111,
+  "duration": 1798195942,
   "status": "passed"
 });
 formatter.match({
@@ -340,7 +340,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldClickOnLink(String)"
 });
 formatter.result({
-  "duration": 2410548676,
+  "duration": 766550338,
   "status": "passed"
 });
 formatter.match({
@@ -353,7 +353,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.checkTitle(String)"
 });
 formatter.result({
-  "duration": 144678358,
+  "duration": 7269197,
   "status": "passed"
 });
 });

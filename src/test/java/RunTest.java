@@ -13,7 +13,7 @@ import org.junit.AfterClass;
 ) 
 public class RunTest {
 	@AfterClass
-    public static void teardown() {
-		pageStepDefinitions.AbstractPageStepDefinitions.driver.quit();
+	public static void teardown() {
+		pageStepDefinitions.AbstractPageStepDefinitions.drivers.close();
     }
 }
