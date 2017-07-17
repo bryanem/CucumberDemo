@@ -1,9 +1,9 @@
 package pageStepDefinitions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.sikuli.script.App;
 import org.sikuli.script.FindFailed;
-import org.sikuli.script.Screen;
-
+import org.sikuli.script.Region;
 import cucumber.api.java.en.When;
 import pageObjects.AdoptionPage;
 import cucumber.api.java.en.Then;
@@ -30,10 +30,10 @@ public class AdoptionPageStepDefinitions extends AbstractPageStepDefinitions {
 	//prueba sikuli
 	@Then("^I use sikuli$")
 	public void executeSikuli() {
-		Screen s = new Screen();
+		Region r =new Region(App.focusedWindow());
         try{
-                s.click("src/test/java/imgs/link.png");
-                s.write("hello world#ENTER.");
+                r.click("src/test/java/imgs/link.png");
+                r.write("hello world#ENTER.");
         }
         catch(FindFailed e){
                 e.printStackTrace();

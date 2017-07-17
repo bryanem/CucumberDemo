@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 2491610363,
+  "duration": 2594954616,
   "status": "passed"
 });
 formatter.background({
@@ -32,7 +32,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldNavigateToZooSite()"
 });
 formatter.result({
-  "duration": 2198320557,
+  "duration": 2334043857,
   "status": "passed"
 });
 formatter.scenario({
@@ -68,7 +68,7 @@ formatter.match({
   "location": "CommonPageStepDefinitions.shouldClickOnLink(String)"
 });
 formatter.result({
-  "duration": 4296967600,
+  "duration": 5089720900,
   "status": "passed"
 });
 formatter.match({
@@ -81,14 +81,14 @@ formatter.match({
   "location": "AdoptionPageStepDefinitions.setStartDate(String)"
 });
 formatter.result({
-  "duration": 140015353,
+  "duration": 246490844,
   "status": "passed"
 });
 formatter.match({
   "location": "AdoptionPageStepDefinitions.executeSikuli()"
 });
 formatter.result({
-  "duration": 2383330883,
+  "duration": 2503254125,
   "status": "passed"
 });
 });

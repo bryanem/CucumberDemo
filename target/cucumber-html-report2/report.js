@@ -1,42 +1,42 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/Adoption.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("ContactConfirm.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Adopt an animal",
+  "line": 1,
+  "name": "Submit a valid contact form",
   "description": "",
-  "id": "adopt-an-animal",
-  "keyword": "Feature",
+  "id": "submit-a-valid-contact-form",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "Submit form using valid data",
+  "description": "",
+  "id": "submit-a-valid-contact-form;submit-form-using-valid-data",
+  "type": "scenario",
+  "keyword": "Scenario",
   "tags": [
     {
-      "line": 1,
-      "name": "@prueba2"
+      "line": 2,
+      "name": "@prueba"
     }
   ]
 });
-formatter.scenario({
-  "line": 4,
-  "name": "Adopt an available animal",
-  "description": "",
-  "id": "adopt-an-animal;adopt-an-available-animal",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
 formatter.step({
-  "line": 5,
+  "line": 4,
   "name": "I am on my zoo website",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "I navigate to \"adoption\"",
+  "line": 5,
+  "name": "I navigate to \"contact\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "I check for an available animal",
+  "line": 6,
+  "name": "I move the slider to 60% of the slide",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "I submit the form with valid data",
   "rows": [
     {
@@ -44,90 +44,102 @@ formatter.step({
         "Fields",
         "Value"
       ],
-      "line": 9
+      "line": 8
     },
     {
       "cells": [
         "Name",
         "Jack Joe"
       ],
-      "line": 10
+      "line": 9
     },
     {
       "cells": [
         "Address",
         "Happy Land"
       ],
-      "line": 11
+      "line": 10
     },
     {
       "cells": [
         "Postcode",
         "A1 S22"
       ],
-      "line": 12
+      "line": 11
     },
     {
       "cells": [
         "Email",
         "bryan@breit.com"
       ],
-      "line": 13
+      "line": 12
     },
     {
       "cells": [
         "Submit",
-        "adoption"
+        "message"
       ],
-      "line": 14
+      "line": 13
     }
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
-  "name": "There should be a confirmation message",
+  "line": 14,
+  "name": "I check the page title is \"We have your message\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "CommonPageStepDefinitions.shouldNavigateToZooSite()"
 });
 formatter.result({
-  "duration": 9110070774,
+  "duration": 4829758327,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "adoption",
+      "val": "contact",
       "offset": 15
     }
   ],
   "location": "CommonPageStepDefinitions.shouldClickOnLink(String)"
 });
 formatter.result({
-  "duration": 2279627312,
+  "duration": 1829624685,
   "status": "passed"
 });
 formatter.match({
-  "location": "AdoptionPageStepDefinitions.checkForAnimal()"
+  "arguments": [
+    {
+      "val": "60",
+      "offset": 21
+    }
+  ],
+  "location": "ContactFormPageStepDefinitions.moveSlider(int)"
 });
 formatter.result({
-  "duration": 967913979,
+  "duration": 169070985,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonPageStepDefinitions.submitContactForm(DataTable)"
 });
 formatter.result({
-  "duration": 5580703958,
+  "duration": 4062698105,
   "status": "passed"
 });
 formatter.match({
-  "location": "AdoptionConfirmationPageStepDefinitions.checkConfirmationMessage()"
+  "arguments": [
+    {
+      "val": "We have your message",
+      "offset": 27
+    }
+  ],
+  "location": "CommonPageStepDefinitions.checkPageTitle(String)"
 });
 formatter.result({
-  "duration": 38803726,
+  "duration": 44568307,
   "status": "passed"
 });
 });
