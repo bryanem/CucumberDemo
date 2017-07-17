@@ -9,7 +9,7 @@ import org.junit.AfterClass;
 		monochrome = false,
 		plugin={"html:target/cucumber-html-report"},
 		features="src/test/resources/features",
-		tags={"~@prueba","@prueba3"}
+		tags={"~@prueba","@prueba4"}
 ) 
 public class RunTest {
 	@AfterClass

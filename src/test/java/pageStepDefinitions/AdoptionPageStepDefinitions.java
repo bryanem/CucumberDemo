@@ -1,6 +1,9 @@
 package pageStepDefinitions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Screen;
+
 import cucumber.api.java.en.When;
 import pageObjects.AdoptionPage;
 import cucumber.api.java.en.Then;
@@ -22,5 +25,18 @@ public class AdoptionPageStepDefinitions extends AbstractPageStepDefinitions {
 		adoption=adoption==null?new AdoptionPage(driver):adoption;
 		Select dropDown=new Select(adoption.getDropdown());
 		dropDown.selectByVisibleText(dropItem);
+	}
+	
+	//prueba sikuli
+	@Then("^I use sikuli$")
+	public void executeSikuli() {
+		Screen s = new Screen();
+        try{
+                s.click("src/test/java/imgs/link.png");
+                s.write("hello world#ENTER.");
+        }
+        catch(FindFailed e){
+                e.printStackTrace();
+        }
 	}
 }
